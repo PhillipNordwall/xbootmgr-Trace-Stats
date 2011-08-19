@@ -47,7 +47,7 @@ def tracestats(directory='.', ext='.xml', tagname='interval'):
     files=[a for a in os.listdir(directory) if ext == a[-1*len(ext):]]
     info = dict()
     for file in files:
-        filedom = xml.dom.minidom.parse(file)
+        filedom = xml.dom.minidom.parse(directory+file)
         attributes = dict()
         # add name: duration entries to the attributes dictionary for tags
         # that match tagname
