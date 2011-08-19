@@ -1,0 +1,7 @@
+tracestats.py calculates mean and stddev on multiple windows
+xbootmgr trace runs.
+
+.xml files in the current directory are treated as being from the same series
+of runs and mean and stddev of the duration are calculated on the intervals in
+them. These XML files are generated via "xperf -i boot_x.etl -o boot_x.xml -a
+boot"
